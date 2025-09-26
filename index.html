@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap row">
+      <div class="brand">
+        <div class="brand-emoji">📚</div>
+        <div class="brand-title">Smart Study Planner</div>
+      </div>
+      <nav class="tabs" role="tablist" aria-label="Views">
+        <button class="tab-btn" data-tab="tasks" aria-selected="true">Tasks</button>
+        <button class="tab-btn" data-tab="timeline">Timeline</button>
+        <button class="tab-btn" data-tab="stats">Stats</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Create / Edit Task -->
+    <section class="card" aria-labelledby="form-head">
+      <div class="head"><h2 id="form-head">Create / Edit Task</h2></div>
+      <div class="content">
+        <form id="taskForm" autocomplete="off">
+          <input type="hidden" id="editingId" />
+          <div class="grid">
+            <div>
+              <label for="taskTitle">Title *</label>
+              <input id="taskTitle" type="text" placeholder="e.g., Revise Chapter 3" required />
+            </div>
+            <div>
+              <label for="taskDue">Due date & time *</label>
+              <input id="taskDue" type="datetime-local" required />
+            </div>
+            <div>
+              <label for="taskPriority">Priority</label>
+              <select id="taskPriority">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <div>
+              <label for="taskNotes">Notes</label>
+              <textarea id="taskNotes" placeholder="Key formulas, pages, links..."></textarea>
+            </div>
+          </div>
+          <div class="row" style="margin-top:12px; justify-content:flex-end;">
+            <button type="reset" class="btn ghost" id="resetBtn">Reset</button>
+            <button type="submit" class="btn primary" id="saveBtn">Save Task</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- My Tasks ABOVE KPIs now -->
+    <div class="card view" data-view="tasks">
+      <div class="head"><h2>My Tasks</h2></div>
+      <div class="content">
+        <div id="taskList" class="task-list"></div>
+      </div>
+    </div>
+
+    <!-- KPIs BELOW tasks -->
+    <div class="kpi">
+      <div class="box"><div class="label">Total</div><div class="value" id="totalTasks">0</div></div>
+      <div class="box"><div class="label">Completed</div><div class="value" id="completedTasks">0</div></div>
+      <div class="box"><div class="label">Pending</div><div class="value" id="pendingTasks">0</div></div>
+      <div class="box"><div class="label">High Priority</div><div class="value" id="highPriorityTasks">0</div></div>
+    </div>
+
+    <!-- Stopwatch -->
+    <div class="card" style="margin-bottom:12px;">
+      <div class="head"><h2>Stopwatch</h2></div>
+      <div class="content stopwatch">
+        <div id="stopwatchDisplay">00:00:00</div>
+        <div class="stopwatch-controls">
+          <button class="btn primary" id="startStopwatch">Start</button>
+          <button class="btn" id="pauseStopwatch">Pause</button>
+          <button class="btn danger" id="resetStopwatch">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="card view" data-view="timeline" hidden>
+      <div class="head"><h2>7-Day Timeline</h2></div>
+      <div class="content timeline-wrap">
+        <div id="timelineGrid" class="timeline"></div>
+        <p class="muted" style="margin-top:8px;">Tasks are placed on their due day. Completed tasks are dimmed.</p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="card view" data-view="stats" hidden>
+      <div class="head"><h2>Stats</h2></div>
+      <div class="content">
+        <canvas id="tasksPerDayChart"></canvas>
+      </div>
+      <div id="tips" class="tips"></div>
+    </div>
+  </main>
+
+  <footer>
+    <strong>Enjoy the learning & Keep learning!</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
