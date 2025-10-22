@@ -1,7 +1,7 @@
-User Profile & Problem:
+**User Profile & Problem:**
 The end user is a student who struggles with academic organization. They find it difficult to manage multiple study tasks, balance priorities, and keep track of deadlines. Existing planning tools are often too simple or lack essential features like integrated reminders, clear progress tracking, and a visual timeline, leading to stress and inefficient study habits.
 
-Solution for the User:
+**Solution for the User:**
 This "Smart Study Planner" directly addresses these problems by providing an easy-to-use, all-in-one web application. The student can:
 Create & Manage Tasks: Add all their assignments, exams, and study sessions with specific due dates, times, and priority levels (High, Medium, Low).
 Stay on Track: Receive browser notifications as reminders for important deadlines.
@@ -9,7 +9,7 @@ Visualize Their Schedule: See their tasks laid out on a 7-day timeline, helping 
 Track Their Progress: Instantly see key stats like total, completed, and pending tasks, giving them a sense of accomplishment and clarity on what's left to do.
 Focus: Use the built-in stopwatch to time their study sessions.
 
-Benefit to the User:
+**Benefit to the User:**
 The ultimate benefit for the student is improved time management, reduced stress, and enhanced academic productivity. The tool empowers them to take control of their schedule and study more effectively.
 Portfolio Project Description
 
