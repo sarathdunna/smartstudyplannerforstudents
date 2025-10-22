@@ -27,6 +27,6 @@ Progress Tracking: Dashboard displays key statistics (Total, Completed, Pending,
 Stopwatch: Includes a built-in stopwatch to help users time their study sessions.
 
 Technologies Used:
-Frontend: HTML5, CSS3, JavaScript (ES6+)
+Frontend: HTML5, CSS3, JavaScript
 Design: Built with a mobile-responsive, user-friendly design.
 Deployment: Hosted on GitHub Pages.
