@@ -13,12 +13,12 @@ Focus: Use the built-in stopwatch to time their study sessions.
 The ultimate benefit for the student is improved time management, reduced stress, and enhanced academic productivity. The tool empowers them to take control of their schedule and study more effectively.
 Portfolio Project Description
 
-Project: Smart Study Planner for Students
+**Project: Smart Study Planner for Students**
 
-Description:
+**Description:**
 A responsive web application designed to help students organize their academic tasks and manage their study schedules effectively. This project solves the common problem of disorganized study planning by providing a clean, user-friendly interface with essential features.
 
-Key Features:
+**Key Features:**
 Task Management: Full CRUD (Create, Read, Update, Delete) functionality for study tasks.
 Prioritization: Assign High, Medium, or Low priority to tasks.
 Reminders: Set due dates and times to receive browser-based notifications.
@@ -26,7 +26,7 @@ Progress Tracking: Dashboard displays key statistics (Total, Completed, Pending,
 7-Day Timeline: Visually displays all tasks on a 7-day grid, organized by priority.
 Stopwatch: Includes a built-in stopwatch to help users time their study sessions.
 
-Technologies Used:
+**Technologies Used:**
 Frontend: HTML5, CSS3, JavaScript
 Design: Built with a mobile-responsive, user-friendly design.
 Deployment: Hosted on GitHub Pages.
